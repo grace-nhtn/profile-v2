@@ -1,0 +1,224 @@
+@use './variables'as *;
+@use './mixins'as *;
+
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family            : $font-family;
+  font-size              : $font-size-base;
+  color                  : $text-primary;
+  background-color       : $background-light;
+  line-height            : 1.6;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.profile-container {
+  max-width: 1200px;
+  margin   : 0 auto;
+  padding  : $spacing-lg;
+
+  @include respond-to(lg) {
+    padding: $spacing-xl;
+  }
+}
+
+.profile-header {
+  text-align   : center;
+  margin-bottom: $spacing-xxl;
+  padding      : $spacing-xl 0;
+
+  .profile-avatar {
+    margin-bottom: $spacing-lg;
+    border       : 4px solid $primary-color;
+    box-shadow   : 0 4px 12px rgba(0, 105, 92, 0.3);
+  }
+
+  .name {
+    font-size    : $font-size-title;
+    font-weight  : 700;
+    color        : $primary-color;
+    margin-bottom: $spacing-sm;
+  }
+
+  .title {
+    font-size  : $font-size-xl;
+    color      : $text-secondary;
+    font-weight: 400;
+  }
+}
+
+.language-switcher {
+  position: fixed;
+  top     : $spacing-md;
+  right   : $spacing-md;
+  z-index : 1000;
+
+  @include respond-to(md) {
+    top  : $spacing-lg;
+    right: $spacing-lg;
+  }
+}
+
+.section {
+  @include card;
+
+  .section-title {
+    @include section-title;
+  }
+}
+
+.personal-info {
+  .info-item {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: $spacing-md;
+
+    .icon {
+      margin-right: $spacing-md;
+      color       : $primary-color;
+      font-size   : $font-size-lg;
+      min-width   : 24px;
+    }
+
+    .content {
+      flex : 1;
+      color: $text-primary;
+    }
+  }
+}
+
+.skills-list {
+  display  : flex;
+  flex-wrap: wrap;
+  gap      : $spacing-sm;
+
+  .skill-tag {
+    background   : $primary-light;
+    color        : white;
+    padding      : $spacing-xs $spacing-md;
+    border-radius: 16px;
+    font-size    : $font-size-base;
+    font-weight  : 500;
+  }
+}
+
+.work-experience-item,
+.project-item {
+  margin-bottom : $spacing-xl;
+  padding-bottom: $spacing-lg;
+  border-bottom : 1px solid $border-color;
+
+  &:last-child {
+    border-bottom : none;
+    margin-bottom : 0;
+    padding-bottom: 0;
+  }
+
+  .item-header {
+    margin-bottom: $spacing-md;
+
+    .item-title {
+      font-size    : $font-size-lg;
+      font-weight  : 600;
+      color        : $primary-color;
+      margin-bottom: $spacing-xs;
+    }
+
+    .item-subtitle {
+      font-size    : $font-size-base;
+      color        : $text-secondary;
+      margin-bottom: $spacing-xs;
+    }
+
+    .item-period {
+      font-size : $font-size-base;
+      color     : $text-secondary;
+      font-style: italic;
+    }
+  }
+
+  .technologies {
+    display   : flex;
+    flex-wrap : wrap;
+    gap       : $spacing-sm;
+    margin-top: $spacing-md;
+
+    .tech-tag {
+      background   : $background-light;
+      color        : $primary-color;
+      padding      : $spacing-xs $spacing-md;
+      border-radius: 4px;
+      font-size    : $font-size-base - 2px;
+      border       : 1px solid $primary-light;
+    }
+  }
+
+  .keywords {
+    display   : flex;
+    flex-wrap : wrap;
+    gap       : $spacing-xs;
+    margin-top: $spacing-sm;
+
+    .keyword-tag {
+      background   : $primary-color;
+      color        : white;
+      padding      : 2px $spacing-sm;
+      border-radius: 12px;
+      font-size    : $font-size-base - 3px;
+      font-weight  : 500;
+    }
+  }
+}
+
+.description-list {
+  list-style  : none;
+  padding-left: 0;
+
+  li {
+    position     : relative;
+    padding-left : $spacing-lg;
+    margin-bottom: $spacing-sm;
+    color        : $text-primary;
+
+    &::before {
+      content    : '•';
+      position   : absolute;
+      left       : 0;
+      color      : $primary-color;
+      font-weight: bold;
+      font-size  : $font-size-lg;
+    }
+  }
+}
+
+// Responsive layout
+.profile-content {
+  @include respond-to(lg) {
+    display              : grid;
+    grid-template-columns: 1fr 2fr;
+    gap                  : $spacing-xl;
+  }
+}
+
+.left-column {
+  @include respond-to(lg) {
+    position: sticky;
+    top     : $spacing-lg;
+    height  : fit-content;
+  }
+}
+
+.right-column {
+  @include respond-to(lg) {
+    // Right column styles
+  }
+}

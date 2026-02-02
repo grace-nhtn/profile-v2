@@ -1,0 +1,22 @@
+export const translations = {
+  en: {
+    personalInfo: 'Personal Information',
+    education: 'Education',
+    skills: 'Skills',
+    workExperience: 'Work Experience',
+    projects: 'Projects',
+    language: 'Language',
+    framework: 'Framework',
+    library: 'Library & Tool',
+  },
+  vn: {
+    personalInfo: 'Thông tin Cá nhân',
+    education: 'Học vấn',
+    skills: 'Kỹ năng',
+    workExperience: 'Kinh nghiệm Làm việc',
+    projects: 'Dự án',
+    language: 'Ngôn ngữ',
+    framework: 'Framework',
+    library: 'Thư viện & Công cụ',
+  },
+};
