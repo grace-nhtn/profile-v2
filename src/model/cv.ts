@@ -4,7 +4,7 @@ export interface PersonalInfo {
   dateOfBirth: string;
   phone: string;
   email: string;
-  address: string;
+  gender?: string;
 }
 
 export interface Education {

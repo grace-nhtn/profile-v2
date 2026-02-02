@@ -18,16 +18,16 @@ export const Education: React.FC<EducationProps> = ({ education }) => {
   return (
     <div className="section">
       <h2 className="section-title">{t.education}</h2>
-      <Title level={4}>{education.school}</Title>
-      <Text strong>{education.major}</Text>
+      <Title level={4} className="education-school">{education.school}</Title>
+      <Text strong className="education-major">{education.major}</Text>
       <br />
-      <Text type="secondary">
+      <Text className="education-period">
         {education.period.start} - {education.period.end}
       </Text>
       {education.gpa && (
         <>
           <br />
-          <Text type="secondary">GPA: {education.gpa}</Text>
+          <Text className="education-gpa">GPA: {education.gpa}</Text>
         </>
       )}
     </div>

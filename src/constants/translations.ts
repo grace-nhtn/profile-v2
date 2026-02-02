@@ -8,6 +8,8 @@ export const translations = {
     language: 'Language',
     framework: 'Framework',
     library: 'Library & Tool',
+    gender: 'Gender',
+    dateOfBirth: 'Date of Birth',
   },
   vn: {
     personalInfo: 'Thông tin Cá nhân',
@@ -18,5 +20,7 @@ export const translations = {
     language: 'Ngôn ngữ',
     framework: 'Framework',
     library: 'Thư viện & Công cụ',
+    gender: 'Giới tính',
+    dateOfBirth: 'Ngày sinh',
   },
 };

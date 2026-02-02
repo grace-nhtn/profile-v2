@@ -7,7 +7,7 @@ export const cvDataEn: CVData = {
     dateOfBirth: '23/05/1997',
     phone: '0363295271',
     email: 'ngocnht.uit@gmail.com',
-    address: '178/8 Nguyen Van Linh street, District 7, Ho Chi Minh city, Vietnam',
+    gender: 'Female',
   },
   education: {
     school: 'University of Information Technology - Vietnam National University Ho Chi Minh City',
@@ -182,7 +182,7 @@ export const cvDataVn: CVData = {
     dateOfBirth: '23/05/1997',
     phone: '0363295271',
     email: 'ngocnht.uit@gmail.com',
-    address: '178/8 Nguyễn Văn Linh, Quận 7, Thành phố Hồ Chí Minh, Việt Nam',
+    gender: 'Nữ',
   },
   education: {
     school: 'Đại học Công nghệ Thông tin - Đại học Quốc gia Thành phố Hồ Chí Minh',

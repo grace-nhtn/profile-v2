@@ -2,12 +2,14 @@ import React from 'react';
 import { Select } from 'antd';
 import { GlobalOutlined } from '@ant-design/icons';
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 import { ProfileHeader } from './components/ProfileHeader/ProfileHeader';
 import { PersonalInfo } from './components/PersonalInfo/PersonalInfo';
 import { Education } from './components/Education/Education';
 import { Skills } from './components/Skills/Skills';
 import { WorkExperience } from './components/WorkExperience/WorkExperience';
 import { Projects } from './components/Projects/Projects';
+import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
 import { cvDataEn, cvDataVn } from './constants/cvData';
 import { LANGUAGES } from './constants/languages';
 import { useLanguage } from './hooks/useLanguage';
@@ -40,6 +42,7 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="profile-container">
+      <ThemeToggle />
       <LanguageSwitcher />
       <ProfileHeader personalInfo={cvData.personalInfo} />
       <div className="profile-content">
@@ -59,9 +62,11 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <LanguageProvider>
-      <AppContent />
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
+    </ThemeProvider>
   );
 };
 

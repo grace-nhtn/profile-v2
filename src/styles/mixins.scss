@@ -23,14 +23,14 @@
 @mixin section-title {
   font-size: $font-size-xl;
   font-weight: 600;
-  color: $primary-color;
+  color: var(--primary-color);
   margin-bottom: $spacing-md;
   padding-bottom: $spacing-sm;
-  border-bottom: 2px solid $primary-color;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 @mixin card {
-  background: $background;
+  background: var(--background);
   border-radius: 8px;
   padding: $spacing-lg;
   margin-bottom: $spacing-lg;
