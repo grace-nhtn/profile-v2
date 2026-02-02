@@ -103,6 +103,38 @@ Customize colors, typography, and spacing in:
 
 Add or modify translations in `src/constants/translations.ts`
 
+## CI/CD Pipeline
+
+This project includes GitHub Actions workflows for continuous integration and deployment.
+
+### Workflows
+
+1. **CI Workflow** (`.github/workflows/ci.yml`)
+   - Runs on push and pull requests
+   - Type checks the codebase
+   - Builds the project
+   - Uploads build artifacts
+
+2. **Deploy Workflow** (`.github/workflows/deploy.yml`)
+   - Runs on push to `main` or `master` branch
+   - Builds the project
+   - Deploys to GitHub Pages
+
+### Setting up GitHub Pages
+
+1. Go to your repository Settings
+2. Navigate to Pages section
+3. Under "Source", select "GitHub Actions"
+4. The workflow will automatically deploy on push to main branch
+
+### Base Path Configuration
+
+The `vite.config.ts` is configured to use `/ProfileV2/` as base path when building in GitHub Actions. If your repository name is different, update the base path in `vite.config.ts`:
+
+```typescript
+base: process.env.GITHUB_ACTIONS ? '/your-repo-name/' : '/',
+```
+
 ## License
 
 MIT
