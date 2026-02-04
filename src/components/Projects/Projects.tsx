@@ -24,7 +24,11 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               {project.period.start} - {project.period.end}
             </div>
           </div>
-          <p className="project-description">{project.description}</p>
+          <ul className="description-list">
+            {project.description.map((desc, descIndex) => (
+              <li key={descIndex}>{desc}</li>
+            ))}
+          </ul>
           {project.technologies && project.technologies.length > 0 && (
             <div className="technologies">
               {project.technologies.map((tech, techIndex) => (

@@ -65,16 +65,39 @@ export const cvDataEn: CVData = {
   ],
   projects: [
     {
+      name: 'Salary & Bonus System',
+      role: 'Developer',
+      period: {
+        start: '06/2024',
+        end: 'Now',
+      },
+      description: [
+        'Developed Salary & Bonus Management System (React 18, TypeScript, TailwindCSS) with Module Federation for micro-frontend architecture.',
+        'Built policy management engines: truck driver salary (pricing, bonus algorithms, regional factors), shipment bonus/penalty (rule-based, tier rewards), commission (AOV shift config).',
+        'Implemented exception management with approval workflows, salary rerun with transaction rollback, and policy configuration (Formik, Zod validation).',
+        'Created Excel import/export with data transformation pipelines and reporting dashboards with aggregation for policy analysis.',
+        'Optimized API calls by 35% using React Query with optimistic updates and implemented RBAC with role-based UI rendering.',
+      ],
+      technologies: ['React 18', 'TypeScript', 'TailwindCSS', 'React Query', 'Formik', 'Zod', 'Rspack', 'Module Federation'],
+      keywords: ['Salary Management', 'Bonus Policy', 'Commission Policy', 'Policy Configuration', 'Exception Management', 'Salary Rerun', 'Logistics Management'],
+    },
+    {
       name: 'Payroll',
       role: 'Developer',
       period: {
         start: '09/2022',
         end: 'Now',
       },
-      description:
-        'Developed a comprehensive Compensation & Benefits Management System using ReactJS and Ant Design. Implemented automated salary calculation algorithms, employee data management, and bonus policy configuration. Built import/export tools for data integration and integrated bank transaction APIs. The system streamlines HR operations, improves accuracy in payroll processing, and provides transparent compensation management.',
-      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
-      keywords: ['HRM', 'Payroll Management', 'Data Integration', 'Bank API Integration', 'Automated Calculations'],
+      description: [
+        'Architected Compensation & Benefits System (ReactJS, TypeScript, Ant Design) with component-based architecture and Redux Saga for async state management.',
+        'Implemented formula calculation engine using HyperFormula for dynamic commission policy evaluation and complex mathematical operations.',
+        'Built automated payslip generation with PDF export (jsPDF, html2canvas) and integrated bank APIs with retry mechanisms for payment processing.',
+        'Developed bulk Excel import/export (ExcelJS) with chunked processing, data validation, and error tracking for large datasets.',
+        'Created accounting dashboards (Recharts) with real-time updates and salary rerun mechanism with transaction rollback capabilities.',
+        'Optimized API calls by 40% using React Query for intelligent caching and server state synchronization.',
+      ],
+      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux', 'Redux Saga', 'React Query', 'HyperFormula', 'Recharts'],
+      keywords: ['HRM', 'Payroll Management', 'Commission Policy', 'Formula Calculation', 'Bank API Integration', 'Payslip Generation', 'Tax Configuration', 'Accounting Reports'],
     },
     {
       name: 'HRM Core',
@@ -83,10 +106,16 @@ export const cvDataEn: CVData = {
         start: '04/2022',
         end: 'Now',
       },
-      description:
-        'Built a comprehensive Human Resource Management System using ReactJS and Ant Design. Developed modules for department management, employee information tracking, contract management, and working shift scheduling. Implemented role-based access control and data visualization dashboards. The system provides a centralized platform for HR teams to efficiently manage all aspects of human resources.',
-      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
-      keywords: ['HRM', 'Employee Management', 'Contract Management', 'Shift Scheduling', 'Data Management'],
+      description: [
+        'Built scalable HRM System (ReactJS, TypeScript, Ant Design) with feature-based architecture and RBAC implementation at component/route levels.',
+        'Developed interactive organizational chart (react-organizational-chart) with drag-and-drop and virtual scrolling for large employee datasets.',
+        'Implemented contract/leave management with multi-step approval workflows, e-contract integration, and automated balance calculations.',
+        'Created bulk Excel import/export with chunked processing (50 records/batch), data validation, and comprehensive error reporting.',
+        'Built audit logging system with before/after state tracking and rollback capabilities for critical data operations.',
+        'Optimized performance using React Query for server state management with optimistic updates and intelligent caching.',
+      ],
+      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux', 'Redux Saga', 'React Query'],
+      keywords: ['HRM', 'Employee Management', 'Contract Management', 'Leave Management', 'Tax Settlement', 'RBAC', 'Excel Import/Export', 'Audit Logging', 'Organizational Chart'],
     },
     {
       name: 'Candidate',
@@ -95,22 +124,14 @@ export const cvDataEn: CVData = {
         start: '04/2022',
         end: 'Now',
       },
-      description:
-        'Developed a Candidate Management System using ReactJS and Ant Design to streamline the recruitment process. Implemented configurable interview workflows based on department and job title, candidate tracking through multiple stages, and analytics dashboards. Built collaboration features for hiring teams and automated notification systems. The system improves hiring efficiency and provides data-driven insights for recruitment decisions.',
+      description: [
+        'Developed Candidate Management System (ReactJS, TypeScript, Ant Design, Redux) with dynamic workflow configuration engine.',
+        'Built candidate tracking with stage-based progression, timeline visualization, and real-time collaboration with conflict resolution.',
+        'Created analytics dashboard with data aggregation for time-to-hire metrics, candidate sources, and interview success rates.',
+        'Implemented event-driven notification system and advanced filtering with debounced input and server-side pagination.',
+      ],
       technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
       keywords: ['Recruitment', 'Candidate Tracking', 'Workflow Management', 'Analytics', 'HRM'],
-    },
-    {
-      name: 'ZNS Chat',
-      role: 'Developer',
-      period: {
-        start: '01/2021',
-        end: '03/2021',
-      },
-      description:
-        'Built a real-time chat service integrated with Zalo messaging platform using ReactJS. Implemented real-time messaging functionality with Socket.IO for instant communication. Developed client-side data persistence using DexieDB (IndexedDB wrapper) for offline message storage. Integrated Zalo API for message receiving and processing. The project provided valuable experience in real-time communication, external API integration, and client-side database management.',
-      technologies: ['ReactJS', 'Socket.IO', 'DexieDB', 'Zalo API', 'JavaScript'],
-      keywords: ['Real-time Communication', 'Socket.IO', 'API Integration', 'Client-side Database', 'Chat Application'],
     },
     {
       name: 'Cost',
@@ -119,34 +140,31 @@ export const cvDataEn: CVData = {
         start: '01/2021',
         end: '03/2021',
       },
-      description:
-        'Developed a Purchase Request Management System for departmental procurement processes. Implemented purchase request form creation and approval workflows, department-based purchase type configuration, and responsible person assignment. Built features for tracking purchase requests, managing budgets, and generating reports. The system streamlines procurement processes and improves cost control across departments.',
-      technologies: ['ReactJS', 'Ant Design', 'Redux', 'JavaScript'],
-      keywords: ['Procurement Management', 'Workflow Management', 'Department Management', 'Cost Control'],
+      description: [
+        'Developed Procurement Management System (ReactJS, React Bootstrap, Redux Saga) with multi-step approval workflows and conditional routing.',
+        'Integrated Oracle ERP via REST APIs with retry mechanisms and built budget management with real-time tracking and inter-department transfers.',
+        'Implemented real-time notifications (Firebase, Stream Chat) and Excel import/export with validation, duplicate detection, and bulk processing.',
+        'Built bill confirmation workflow with OCR integration for invoice extraction and immutable audit trail with rollback capabilities.',
+      ],
+      technologies: ['ReactJS', 'React Bootstrap', 'Redux', 'Redux Saga', 'Firebase', 'Stream Chat', 'JavaScript'],
+      keywords: ['Procurement Management', 'Purchase Order', 'Oracle Integration', 'Budget Management', 'Workflow Management', 'Cost Control', 'Transaction Tracking'],
     },
     {
-      name: 'CRM',
-      role: 'Developer',
-      period: {
-        start: '01/2021',
-        end: 'Now',
-      },
-      description:
-        'Built a comprehensive Customer Relationship Management system using ReactJS. Developed modules for customer record management, contract tracking, customer wallet management, and inter-customer transfers. Implemented bulk data import/export tools for efficient data management. Created configuration systems for customizing games and interactive features for clients and employees. The system provides a complete solution for customer relationship management and engagement.',
-      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
-      keywords: ['CRM', 'Customer Management', 'Data Management', 'Bulk Operations', 'Gamification'],
-    },
-    {
-      name: 'Notification',
+      name: 'Eform',
       role: 'Developer',
       period: {
         start: '01/2021',
         end: '03/2021',
       },
-      description:
-        'Developed a Notification Management System using ReactJS and React Bootstrap. Built features for creating, editing, and scheduling notifications (alerts and banners) for customer apps and websites. Implemented notification delivery scheduling, targeting options, and analytics tracking. The system ensures efficient notification delivery and improves customer engagement through timely communication.',
-      technologies: ['ReactJS', 'React Bootstrap', 'JavaScript'],
-      keywords: ['Notification System', 'Scheduling', 'Multi-channel Delivery', 'Customer Engagement'],
+      description: [
+        'Developed dynamic Form Management System (ReactJS, Ant Design, Redux Saga) with drag-and-drop builder (React Beautiful DnD).',
+        'Built dynamic field rendering engine supporting multiple types with conditional visibility, validation rules, and nested structures.',
+        'Implemented configurable multi-step approval workflows with role-based routing, parallel approvals, and conditional branching logic.',
+        'Created form template system reducing creation time by 60% and integrated TinyMCE for rich text editing with custom toolbars.',
+        'Built real-time collaboration with commenting, versioning system, and export functionality (PDF/Excel) with template-based generation.',
+      ],
+      technologies: ['ReactJS', 'Ant Design', 'Redux', 'Redux Saga', 'TinyMCE', 'React Beautiful DnD', 'TypeScript'],
+      keywords: ['Form Builder', 'Workflow Management', 'Approval Process', 'Dynamic Forms', 'Document Management', 'Drag and Drop'],
     },
     {
       name: 'Fixle',
@@ -155,8 +173,12 @@ export const cvDataEn: CVData = {
         start: '11/2018',
         end: '4/2019',
       },
-      description:
-        'Developed a House Job Distribution Application with multi-role support (Master Admin, Company Admin, Provider, Client). Implemented job assignment workflows, provider management, client request handling, and admin dashboards. Built features for tracking job status, managing service providers, and handling payments. The system streamlines house service job distribution and improves service delivery efficiency.',
+      description: [
+        'Developed cross-platform mobile app (ReactJS, PhoneGap) with multi-role authentication (Master/Company Admin, Provider, Client) and RBAC.',
+        'Built job assignment engine with automated provider matching algorithms (location, availability, service type) and GPS-based status tracking.',
+        'Implemented real-time features: status updates, push notifications, in-app messaging, and admin dashboards with analytics visualization.',
+        'Created payment processing with multiple gateway integrations and transaction history tracking.',
+      ],
       technologies: ['ReactJS', 'PhoneGap', 'Redux', 'Bootstrap', 'JavaScript'],
       keywords: ['Job Management', 'Multi-role System', 'Workflow Management', 'Service Distribution'],
     },
@@ -167,8 +189,12 @@ export const cvDataEn: CVData = {
         start: '3/2019',
         end: '12/2019',
       },
-      description:
-        'Developed a Training Management Application for the Primary Sector using PhoneGap, ReactJS, Redux, and Bootstrap. Built features for Training Advisors to manage workplaces, learners, and training programs. Implemented capability plan creation and tracking, learner progress monitoring, and PDF report generation with email functionality. The app supports offline operation, enabling remote training management without internet connectivity. The system improves training efficiency and provides comprehensive reporting capabilities.',
+      description: [
+        'Developed Training Management App (PhoneGap, ReactJS, Redux, Bootstrap) with offline-first architecture using IndexedDB for data persistence.',
+        'Built workplace/learner management with CRUD operations, bulk import/export, and capability plan tracking with milestone-based progress monitoring.',
+        'Implemented PDF report generation (jsPDF) with custom templates, email integration for automated distribution, and data sync with conflict resolution.',
+        'Created learner progress dashboard with visual indicators, completion metrics, and form validation for offline scenarios.',
+      ],
       technologies: ['ReactJS', 'PhoneGap', 'Redux', 'Bootstrap', 'JavaScript'],
       keywords: ['Training Management', 'Offline Support', 'PDF Generation', 'Progress Tracking', 'Mobile App'],
     },
@@ -240,16 +266,39 @@ export const cvDataVn: CVData = {
   ],
   projects: [
     {
+      name: 'Hệ thống lương thưởng',
+      role: 'Developer',
+      period: {
+        start: '06/2024',
+        end: 'Hiện tại',
+      },
+      description: [
+        'Phát triển Hệ thống Quản lý Lương & Thưởng (React 18, TypeScript, TailwindCSS) với Module Federation cho micro-frontend architecture.',
+        'Xây dựng engine quản lý chính sách: lương tài xế (pricing, bonus algorithms, regional factors), thưởng phạt vận đơn (rule-based, tier rewards), hoa hồng (AOV shift config).',
+        'Triển khai quản lý ngoại lệ với approval workflows, chạy lại lương với transaction rollback và cấu hình chính sách (Formik, Zod validation).',
+        'Tạo import/export Excel với data transformation pipelines và dashboard báo cáo với aggregation cho policy analysis.',
+        'Tối ưu API calls 35% sử dụng React Query với optimistic updates và triển khai RBAC với role-based UI rendering.',
+      ],
+      technologies: ['React 18', 'TypeScript', 'TailwindCSS', 'React Query', 'Formik', 'Zod', 'Rspack', 'Module Federation'],
+      keywords: ['Quản lý Lương', 'Chính sách Thưởng', 'Chính sách Hoa hồng', 'Cấu hình Chính sách', 'Quản lý Ngoại lệ', 'Chạy lại Lương', 'Quản lý Logistics'],
+    },
+    {
       name: 'Payroll',
       role: 'Developer',
       period: {
         start: '09/2022',
         end: 'Hiện tại',
       },
-      description:
-        'Phát triển Hệ thống Quản lý Lương và Phúc lợi toàn diện sử dụng ReactJS và Ant Design. Triển khai các thuật toán tính lương tự động, quản lý dữ liệu nhân viên và cấu hình chính sách thưởng. Xây dựng công cụ import/export cho tích hợp dữ liệu và tích hợp API giao dịch ngân hàng. Hệ thống tối ưu hóa hoạt động HR, cải thiện độ chính xác trong xử lý lương và cung cấp quản lý lương minh bạch.',
-      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
-      keywords: ['HRM', 'Quản lý Lương', 'Tích hợp Dữ liệu', 'Tích hợp API Ngân hàng', 'Tính toán Tự động'],
+      description: [
+        'Thiết kế Hệ thống Quản lý Lương & Phúc lợi (ReactJS, TypeScript, Ant Design) với kiến trúc component-based và Redux Saga cho async state management.',
+        'Triển khai engine tính toán công thức (HyperFormula) cho đánh giá chính sách hoa hồng động và các phép toán phức tạp.',
+        'Xây dựng hệ thống tự động tạo phiếu lương với PDF export (jsPDF, html2canvas) và tích hợp API ngân hàng với retry mechanisms.',
+        'Phát triển import/export Excel hàng loạt (ExcelJS) với chunked processing, validation và error tracking cho dataset lớn.',
+        'Tạo dashboard kế toán (Recharts) với real-time updates và cơ chế chạy lại lương với transaction rollback.',
+        'Tối ưu API calls 40% sử dụng React Query cho intelligent caching và server state synchronization.',
+      ],
+      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux', 'Redux Saga', 'React Query', 'HyperFormula', 'Recharts'],
+      keywords: ['HRM', 'Quản lý Lương', 'Chính sách Hoa hồng', 'Tính toán Công thức', 'Tích hợp API Ngân hàng', 'Tạo Phiếu lương', 'Cấu hình Thuế', 'Báo cáo Kế toán'],
     },
     {
       name: 'HRM Core',
@@ -258,34 +307,32 @@ export const cvDataVn: CVData = {
         start: '04/2022',
         end: 'Hiện tại',
       },
-      description:
-        'Xây dựng Hệ thống Quản lý Nhân sự toàn diện sử dụng ReactJS và Ant Design. Phát triển các module quản lý phòng ban, theo dõi thông tin nhân viên, quản lý hợp đồng và lập lịch ca làm việc. Triển khai kiểm soát truy cập dựa trên vai trò và dashboard trực quan hóa dữ liệu. Hệ thống cung cấp nền tảng tập trung cho team HR để quản lý hiệu quả mọi khía cạnh của nhân sự.',
-      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
-      keywords: ['HRM', 'Quản lý Nhân viên', 'Quản lý Hợp đồng', 'Lập lịch Ca làm việc', 'Quản lý Dữ liệu'],
+      description: [
+        'Xây dựng Hệ thống HRM có khả năng mở rộng (ReactJS, TypeScript, Ant Design) với kiến trúc feature-based và triển khai RBAC ở cấp component/route.',
+        'Phát triển sơ đồ tổ chức tương tác (react-organizational-chart) với drag-and-drop và virtual scrolling cho dataset nhân viên lớn.',
+        'Triển khai quản lý hợp đồng/nghỉ phép với workflow phê duyệt đa bước, tích hợp e-contract và tính toán điều chỉnh tự động.',
+        'Xây dựng import/export Excel với chunked processing (50 bản ghi/batch), validation và error reporting toàn diện.',
+        'Tạo hệ thống audit logging với before/after state tracking và rollback capabilities cho thao tác dữ liệu quan trọng.',
+        'Tối ưu hiệu suất sử dụng React Query cho server state management với optimistic updates và intelligent caching.',
+      ],
+      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux', 'Redux Saga', 'React Query'],
+      keywords: ['HRM', 'Quản lý Nhân viên', 'Quản lý Hợp đồng', 'Quản lý Nghỉ phép', 'Quyết toán Thuế', 'RBAC', 'Import/Export Excel', 'Audit Logging', 'Sơ đồ Tổ chức'],
     },
     {
       name: 'Candidate',
       role: 'Developer',
       period: {
         start: '04/2022',
-        end: 'Hiện tại',
+        end: '9/2024',
       },
-      description:
-        'Phát triển Hệ thống Quản lý Ứng viên sử dụng ReactJS và Ant Design để tối ưu hóa quy trình tuyển dụng. Triển khai workflow phỏng vấn có thể cấu hình dựa trên phòng ban và vị trí, theo dõi ứng viên qua nhiều giai đoạn và dashboard phân tích. Xây dựng tính năng cộng tác cho team tuyển dụng và hệ thống thông báo tự động. Hệ thống cải thiện hiệu quả tuyển dụng và cung cấp insights dựa trên dữ liệu cho quyết định tuyển dụng.',
+      description: [
+        'Phát triển Hệ thống Quản lý Ứng viên (ReactJS, TypeScript, Ant Design, Redux) với engine cấu hình workflow động.',
+        'Xây dựng tracking ứng viên với stage-based progression, timeline visualization và cộng tác real-time với conflict resolution.',
+        'Tạo dashboard phân tích với data aggregation cho metrics time-to-hire, nguồn ứng viên và tỷ lệ thành công phỏng vấn.',
+        'Triển khai hệ thống thông báo event-driven và filtering nâng cao với debounced input và server-side pagination.',
+      ],
       technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
       keywords: ['Tuyển dụng', 'Theo dõi Ứng viên', 'Quản lý Workflow', 'Phân tích', 'HRM'],
-    },
-    {
-      name: 'ZNS Chat',
-      role: 'Developer',
-      period: {
-        start: '01/2021',
-        end: '03/2021',
-      },
-      description:
-        'Xây dựng dịch vụ chat real-time tích hợp với nền tảng nhắn tin Zalo sử dụng ReactJS. Triển khai tính năng nhắn tin real-time với Socket.IO cho giao tiếp tức thời. Phát triển lưu trữ dữ liệu phía client sử dụng DexieDB (wrapper IndexedDB) cho lưu trữ tin nhắn offline. Tích hợp Zalo API để nhận và xử lý tin nhắn. Dự án cung cấp kinh nghiệm quý giá về giao tiếp real-time, tích hợp API bên ngoài và quản lý database phía client.',
-      technologies: ['ReactJS', 'Socket.IO', 'DexieDB', 'Zalo API', 'JavaScript'],
-      keywords: ['Giao tiếp Real-time', 'Socket.IO', 'Tích hợp API', 'Database Client-side', 'Ứng dụng Chat'],
     },
     {
       name: 'Cost',
@@ -294,34 +341,31 @@ export const cvDataVn: CVData = {
         start: '01/2021',
         end: '03/2021',
       },
-      description:
-        'Phát triển Hệ thống Quản lý Yêu cầu Mua hàng cho quy trình mua sắm theo phòng ban. Triển khai workflow tạo và phê duyệt form yêu cầu mua hàng, cấu hình loại mua hàng theo phòng ban và phân công người phụ trách. Xây dựng tính năng theo dõi yêu cầu mua hàng, quản lý ngân sách và tạo báo cáo. Hệ thống tối ưu hóa quy trình mua sắm và cải thiện kiểm soát chi phí giữa các phòng ban.',
-      technologies: ['ReactJS', 'Ant Design', 'Redux', 'JavaScript'],
-      keywords: ['Quản lý Mua sắm', 'Quản lý Workflow', 'Quản lý Phòng ban', 'Kiểm soát Chi phí'],
+      description: [
+        'Phát triển Hệ thống Quản lý Mua sắm (ReactJS, React Bootstrap, Redux Saga) với workflow phê duyệt đa bước và conditional routing.',
+        'Tích hợp Oracle ERP qua REST APIs với retry mechanisms và xây dựng quản lý ngân sách với real-time tracking và chuyển khoản liên phòng ban.',
+        'Triển khai thông báo real-time (Firebase, Stream Chat) và import/export Excel với validation, duplicate detection và bulk processing.',
+        'Xây dựng workflow xác nhận hóa đơn với OCR integration cho invoice extraction và immutable audit trail với rollback capabilities.',
+      ],
+      technologies: ['ReactJS', 'React Bootstrap', 'Redux', 'Redux Saga', 'Firebase', 'Stream Chat', 'JavaScript'],
+      keywords: ['Quản lý Mua sắm', 'Đơn hàng Mua', 'Tích hợp Oracle', 'Quản lý Ngân sách', 'Quản lý Workflow', 'Kiểm soát Chi phí', 'Theo dõi Giao dịch'],
     },
     {
-      name: 'CRM',
-      role: 'Developer',
-      period: {
-        start: '01/2021',
-        end: 'Hiện tại',
-      },
-      description:
-        'Xây dựng Hệ thống Quản lý Quan hệ Khách hàng toàn diện sử dụng ReactJS. Phát triển các module quản lý hồ sơ khách hàng, theo dõi hợp đồng, quản lý ví khách hàng và chuyển khoản giữa khách hàng. Triển khai công cụ import/export dữ liệu hàng loạt cho quản lý dữ liệu hiệu quả. Tạo hệ thống cấu hình để tùy chỉnh game và tính năng tương tác cho khách hàng và nhân viên. Hệ thống cung cấp giải pháp hoàn chỉnh cho quản lý quan hệ khách hàng và tương tác.',
-      technologies: ['ReactJS', 'TypeScript', 'Ant Design', 'Redux'],
-      keywords: ['CRM', 'Quản lý Khách hàng', 'Quản lý Dữ liệu', 'Thao tác Hàng loạt', 'Gamification'],
-    },
-    {
-      name: 'Notification',
+      name: 'Eform',
       role: 'Developer',
       period: {
         start: '01/2021',
         end: '03/2021',
       },
-      description:
-        'Phát triển Hệ thống Quản lý Thông báo sử dụng ReactJS và React Bootstrap. Xây dựng tính năng tạo, chỉnh sửa và lập lịch thông báo (cảnh báo và banner) cho ứng dụng và website khách hàng. Triển khai lập lịch gửi thông báo, tùy chọn targeting và theo dõi phân tích. Hệ thống đảm bảo gửi thông báo hiệu quả và cải thiện tương tác khách hàng thông qua giao tiếp kịp thời.',
-      technologies: ['ReactJS', 'React Bootstrap', 'JavaScript'],
-      keywords: ['Hệ thống Thông báo', 'Lập lịch', 'Gửi Đa kênh', 'Tương tác Khách hàng'],
+      description: [
+        'Phát triển Hệ thống Quản lý Form Động (ReactJS, Ant Design, Redux Saga) với drag-and-drop builder (React Beautiful DnD).',
+        'Triển khai engine render field động hỗ trợ nhiều loại với conditional visibility, validation rules và nested structures.',
+        'Xây dựng workflow phê duyệt đa bước có thể cấu hình với role-based routing, parallel approvals và conditional branching logic.',
+        'Tạo hệ thống form template giảm 60% thời gian tạo form và tích hợp TinyMCE cho rich text editing với custom toolbars.',
+        'Phát triển cộng tác real-time với commenting, versioning system và export functionality (PDF/Excel) với template-based generation.',
+      ],
+      technologies: ['ReactJS', 'Ant Design', 'Redux', 'Redux Saga', 'TinyMCE', 'React Beautiful DnD', 'TypeScript'],
+      keywords: ['Form Builder', 'Quản lý Workflow', 'Quy trình Phê duyệt', 'Form Động', 'Quản lý Tài liệu', 'Drag and Drop'],
     },
     {
       name: 'Fixle',
@@ -330,8 +374,12 @@ export const cvDataVn: CVData = {
         start: '11/2018',
         end: '4/2019',
       },
-      description:
-        'Phát triển Ứng dụng Phân phối Công việc Nhà ở với hỗ trợ đa vai trò (Master Admin, Company Admin, Provider, Client). Triển khai workflow phân công công việc, quản lý nhà cung cấp, xử lý yêu cầu khách hàng và dashboard admin. Xây dựng tính năng theo dõi trạng thái công việc, quản lý nhà cung cấp dịch vụ và xử lý thanh toán. Hệ thống tối ưu hóa phân phối công việc dịch vụ nhà ở và cải thiện hiệu quả cung cấp dịch vụ.',
+      description: [
+        'Phát triển ứng dụng mobile đa nền tảng (ReactJS, PhoneGap) với multi-role authentication (Master/Company Admin, Provider, Client) và RBAC.',
+        'Xây dựng engine phân công công việc với thuật toán matching tự động (location, availability, service type) và GPS-based status tracking.',
+        'Triển khai tính năng real-time: status updates, push notifications, in-app messaging và admin dashboards với analytics visualization.',
+        'Tạo hệ thống xử lý thanh toán với tích hợp nhiều payment gateways và transaction history tracking.',
+      ],
       technologies: ['ReactJS', 'PhoneGap', 'Redux', 'Bootstrap', 'JavaScript'],
       keywords: ['Quản lý Công việc', 'Hệ thống Đa vai trò', 'Quản lý Workflow', 'Phân phối Dịch vụ'],
     },
@@ -342,8 +390,12 @@ export const cvDataVn: CVData = {
         start: '3/2019',
         end: '12/2019',
       },
-      description:
-        'Phát triển Ứng dụng Quản lý Đào tạo cho Lĩnh vực Sơ cấp sử dụng PhoneGap, ReactJS, Redux và Bootstrap. Xây dựng tính năng cho Training Advisors để quản lý nơi làm việc, học viên và chương trình đào tạo. Triển khai tạo và theo dõi kế hoạch năng lực, giám sát tiến độ học viên và tạo báo cáo PDF với chức năng email. Ứng dụng hỗ trợ hoạt động offline, cho phép quản lý đào tạo từ xa không cần kết nối internet. Hệ thống cải thiện hiệu quả đào tạo và cung cấp khả năng báo cáo toàn diện.',
+      description: [
+        'Phát triển Ứng dụng Quản lý Đào tạo (PhoneGap, ReactJS, Redux, Bootstrap) với offline-first architecture sử dụng IndexedDB cho data persistence.',
+        'Xây dựng quản lý nơi làm việc/học viên với CRUD operations, bulk import/export và tracking kế hoạch năng lực với milestone-based progress.',
+        'Triển khai PDF report generation (jsPDF) với custom templates, email integration cho automated distribution và data sync với conflict resolution.',
+        'Tạo dashboard tiến độ học viên với visual indicators, completion metrics và form validation cho offline scenarios.',
+      ],
       technologies: ['ReactJS', 'PhoneGap', 'Redux', 'Bootstrap', 'JavaScript'],
       keywords: ['Quản lý Đào tạo', 'Hỗ trợ Offline', 'Tạo PDF', 'Theo dõi Tiến độ', 'Ứng dụng Mobile'],
     },

@@ -40,7 +40,7 @@ export interface Project {
     start: string;
     end: string;
   };
-  description: string;
+  description: string[];
   technologies: string[];
   keywords: string[];
 }
